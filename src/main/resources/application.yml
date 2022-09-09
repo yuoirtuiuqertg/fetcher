@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://sbp-api.a-is.ru:10440;database=MSSQLApt2;encrypt=false
+    username: hypershop
+    password: t3sR6m^e
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  jpa:
+    database-platform: org.hibernate.dialect.SQLServerDialect
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
